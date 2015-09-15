@@ -8,7 +8,7 @@ var getWords = function(words){
     var word = splitWords[i];
 
     splitWords[i] = splitWords[i].toLowerCase();
-    //splitWords[i] = splitWords[i].replace(/[.,-?\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+  //  splitWords[i] = splitWords[i].replace(/[.,-?\/#!$%\^&\*;:{}=\-_`~()]/g,"");
     splitWords[i] = splitWords[i].replace("are", "art");
     splitWords[i] = splitWords[i].replace("yes", "aye");
     splitWords[i] = splitWords[i].replace("no", "naye");
@@ -35,8 +35,11 @@ var getWords = function(words){
     splitWords[i] = splitWords[i].replace("please", "prithee");
   }
 
+   var words = splitWords.join();
+   words = words.replace(/[,]/g," ");
 
-  return splitWords;
+
+  return words;
 
 
 
