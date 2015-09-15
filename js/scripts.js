@@ -1,39 +1,44 @@
 var getWords = function(words){
 
-  var splitWords = words.split("") {
-
-  words = words.toLowerCase();
-  words = words.replace(/[.,-?\/#!$%\^&\*;:{}=\-_`~()]/g,"");
-  words = words.replace("are", "art");
-  words = words.replace("yes", "aye");
-  words = words.replace("no", "naye");
-  words = words.replace("do", "dost");
-  words = words.replace("before", "ere");
-  words = words.replace("away", "hence");
-  words = words.replace("listen", "hark");
-  words = words.replace("you", "thee");
-  words = words.replace("your", "thy");
-  words = words.replace("where", "whither");
-  words = words.replace("there", "thither");
-  words = words.replace("over", "ov'r");
-  words = words.replace("hello", "good morrow");
-  words = words.replace("hi", "good morrow");
-  words = words.replace("hey", "good morrow");
-  words = words.replace("here", "hither");
-  words = words.replace("why", "wherefor");
-  words = words.replace("my", "mine");
-  words = words.replace("cool", "merit");
-  words = words.replace("eat", "consume");
-  words = words.replace("does not", "doest not");
-  words = words.replace("doesn't", "doest not");
-  words = words.replace("bye", "DOTH LEAVE ME!!!!!");
-  words = words.replace("please", "prithee");
+  var splitWords = words.split(" ");
 
 
-  return words;
+  for (var i=0; i < splitWords.length; i++) {
+    // debugger;
+    var word = splitWords[i];
+
+    splitWords[i] = splitWords[i].toLowerCase();
+    //splitWords[i] = splitWords[i].replace(/[.,-?\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+    splitWords[i] = splitWords[i].replace("are", "art");
+    splitWords[i] = splitWords[i].replace("yes", "aye");
+    splitWords[i] = splitWords[i].replace("no", "naye");
+    splitWords[i] = splitWords[i].replace("do", "dost");
+    splitWords[i] = splitWords[i].replace("before", "ere");
+    splitWords[i] = splitWords[i].replace("away", "hence");
+    splitWords[i] = splitWords[i].replace("listen", "hark");
+    splitWords[i] = splitWords[i].replace("you", "thee");
+    splitWords[i] = splitWords[i].replace("your", "thy");
+    splitWords[i] = splitWords[i].replace("where", "whither");
+    splitWords[i] = splitWords[i].replace("there", "thither");
+    splitWords[i] = splitWords[i].replace("over", "ov'r");
+    splitWords[i] = splitWords[i].replace("hello", "good morrow");
+    splitWords[i] = splitWords[i].replace("hi", "good morrow");
+    splitWords[i] = splitWords[i].replace("hey", "good morrow");
+    splitWords[i] = splitWords[i].replace("here", "hither");
+    splitWords[i] = splitWords[i].replace("why", "wherefor");
+    splitWords[i] = splitWords[i].replace("my", "mine");
+    splitWords[i] = splitWords[i].replace("cool", "merit");
+    splitWords[i] = splitWords[i].replace("eat", "consume");
+    splitWords[i] = splitWords[i].replace("does not", "doest not");
+    splitWords[i] = splitWords[i].replace("doesn't", "doest not");
+    splitWords[i] = splitWords[i].replace("bye", "DOTH LEAVE ME!!!!!");
+    splitWords[i] = splitWords[i].replace("please", "prithee");
+  }
 
 
-};
+  return splitWords;
+
+
 
 };
 
