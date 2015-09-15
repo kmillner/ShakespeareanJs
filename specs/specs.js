@@ -1,6 +1,6 @@
-describe('getLetters', function() {
-  it("is o for input oats", function() {
-    expect(getFirstVowel("oats")).to.equal("o");
+describe('getWord', function() {
+  it("is are changed to art?", function() {
+    expect(getFirstVowel("are")).to.equal("art");
   });
 
 });
